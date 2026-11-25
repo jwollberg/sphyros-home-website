@@ -1,11 +1,10 @@
 # Sphyros Home Services — Site Guide
 
 Read the master workspace guide first: [`..\CLAUDE.md`](../CLAUDE.md). It covers the
-shared build recipe (Astro + GitHub Pages), the publish steps, and the domain-freeing
+shared build recipe (Astro, served from Vault), the publish steps, and the domain-freeing
 plan. This file only covers what's specific to Sphyros Home Services.
 
-- **Domain:** sphyroshome.com — *confirm current host with Josh; may point straight at
-  GitHub Pages (not on Google Sites like the other two).*
+- **Domain:** sphyroshome.com (repo `jwollberg/sphyroshome`), served from Vault, Josh's home server, through Cloudflare (since 2026-11-25; GitHub Pages before, still deployed as the fallback until Josh turns it off). Push to `main`: GitHub builds it, the workflow's `vault` job pushes the finished pages to the `site` branch, and Vault serves them within about four minutes. How it works and how to roll back: `AtheosHome/vault/README.md`, "Public websites", in `jwollberg/atheos-home`.
 - **What it is:** a home services company focused on **small projects & everyday home
   repairs** for homeowners (handyman-style: repairs, maintenance, odd jobs, installations,
   seasonal/outdoor). **Not** builds or full remodels.
